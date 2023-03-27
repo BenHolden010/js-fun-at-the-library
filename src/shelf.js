@@ -19,19 +19,31 @@ function unshelfBook(book, shelf) {
 }
 
 function listTitles(shelf) {
-  // should create a list of all the titles on a shelf
+  // pseudocode - should create a list of all the titles on a shelf
   var titles = []
   for (var i = 0; i < shelf.length; i++) {
       titles.push(shelf[i].title)
     } return titles.join(', ')
 }
 
-// function 
+function searchShelf(shelf, bookTitle){
+  // psuedocode - should tell us if a title is on the shelf
+  // for (var i = 0; i < shelf.length; i++)
+  
+    if (shelf[0].title.includes(bookTitle)){
+      return true
+    } else if (shelf[1].title.includes(bookTitle)){
+        return true
+    } else {
+      return false
+    }
+  
+}
 
 
 module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf
 };
