@@ -45,7 +45,7 @@ return book
 function editBook(book) {
     // pseudocode - should decrease the book's page
     // count to be three quarters of what it originally was
-    book.pagecount = book.pageCount * .75
+    book.pageCount = book.pageCount * .75
     return book.pageCount
     
 }
