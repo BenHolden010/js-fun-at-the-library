@@ -14,16 +14,10 @@ function createLibrary(libraryName) {
 function addBook(library, bookTitle){
   // pseudocode - should add book to the fantasy shelf 
   // should add books to the correct shelves automatically
-  if (genre = 'fantasy') {
-  library.shelves.fantasy.push(bookTitle)
-  } 
-  // else if (genre = 'fiction') {
-    // library.shelves.fiction.push(bookTitle)
-  // } 
-  // else (genre = 'nonFiction') {
-    
-  //   library.shelves.nonFiction.push(bookTitle)
-  // }
+  for (var i = 0; i < shelves.length; i++) {
+var genre = shelves[i]
+  library.shelves.genre.push(bookTitle)
+  }
 return library
 }
 

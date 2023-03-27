@@ -42,11 +42,11 @@ function writeBook(bookTitle, bookCharacter, genre) {
 return book
 }
 
-function editBook (pageCount) {
+function editBook(book) {
     // pseudocode - should decrease the book's page
     // count to be three quarters of what it originally was
-    newPageCount = [pageCount] / 5
-    return newPageCount
+    book.pagecount = book.pageCount * .75
+    return book.pageCount
     
 }
 

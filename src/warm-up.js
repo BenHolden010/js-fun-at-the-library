@@ -21,7 +21,7 @@ var pages = 10000
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
 
-pages = pages/4
+pages *= .75
 // console.log(pages)
 
 // Initialize a new variable "movie", but leave it undefined
@@ -58,11 +58,11 @@ var isShortStory = pages<25
 // the statement 'I could read that in a day!', otherwise, log the statement 
 // 'Ok, maybe I could read that in a day and a half'
 
-// if (pages<1000) {
-//     console.log('I could read that in a day!')
-// } else {
-//     console.log('Ok, maybe I could read that in a day and a half')
-// }
+if (pages<1000) {
+    console.log('I could read that in a day!')
+} else {
+    console.log('Ok, maybe I could read that in a day and a half')
+}
 
 
 
@@ -71,11 +71,11 @@ var isShortStory = pages<25
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-// if (isFavorite === true) {
-//     console.log(`My favorite book is ${title}`)
-// } else {
-//     console.log(`I recently read the ${title} book`)
-// }
+if (isFavorite === true) {
+    console.log(`My favorite book is ${title}`)
+} else {
+    console.log(`I recently read the ${title} book`)
+}
 
 //------------------------- Arrays -------------------------//
 
